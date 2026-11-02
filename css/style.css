@@ -291,3 +291,23 @@ h3 { font-size: 1.15rem; letter-spacing: -0.01em; }
   *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* Certificados */
+.certs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.cert {
+  display: flex; flex-direction: column; padding: 1.75rem; border-radius: var(--radius);
+  border: 1px solid var(--border); background: var(--surface);
+  transition: border-color 0.3s, background 0.3s, transform 0.45s var(--ease);
+}
+.cert:hover { border-color: rgba(218, 65, 103, 0.45); background: rgba(131, 33, 97, 0.12); transform: translateY(-4px); }
+.cert__issuer {
+  align-self: flex-start; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em;
+  color: var(--rose); background: rgba(218, 65, 103, 0.1); padding: 0.28rem 0.7rem; border-radius: 999px;
+}
+.cert h3 { margin: 1rem 0 0.5rem; font-size: 1.2rem; }
+.cert__meta { font-size: 0.88rem; color: var(--muted); }
+.cert__note { font-size: 0.82rem; color: var(--muted); margin-top: auto; padding-top: 1rem; opacity: 0.8; }
+.cert ul { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.cert li { color: var(--muted); font-size: 0.92rem; padding: 0.2rem 0; }
+@media (max-width: 960px) { .certs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .certs { grid-template-columns: 1fr; } }
