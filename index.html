@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kauã Dapper — UX/UI Design</title>
+  <meta name="description" content="Portfólio de Kauã Dapper: estudante de Sistemas de Informação com foco em UX/UI Design, pesquisa com usuários, prototipação no Figma e identidade visual.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Kauã Dapper — UX/UI Design">
+  <meta property="og:description" content="Interfaces intuitivas, pesquisa com usuários e identidade visual. Portfólio de Kauã Dapper.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo" aria-label="Kauã Dapper — início">
+        <img src="assets/img/logo-claro.svg" alt="Dapper UX/UI Design" width="251" height="108">
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato" class="btn btn--small">Contato</a>
+      </nav>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow reveal">UX/UI Design · Nova Hartz, RS</p>
+        <h1 class="hero__title reveal">
+          Olá, eu sou <span class="grad-text">Kauã Dapper</span>.<br>
+          Desenho interfaces centradas nas pessoas.
+        </h1>
+        <p class="hero__lead reveal">
+          Estudante de Sistemas de Informação com base técnica em tecnologia e experiência prática em pesquisa de UX,
+          prototipação no Figma e design digital.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+          <a href="#contato" class="btn btn--ghost">Vamos conversar</a>
+        </div>
+        <ul class="hero__stats reveal" aria-label="Números">
+          <li><strong>12+</strong><span>projetos no Behance</span></li>
+          <li><strong>2025</strong><span>UX/UI na Prefeitura de Nova Hartz</span></li>
+          <li><strong>EN · ES</strong><span>inglês avançado, espanhol intermediário</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container about">
+        <div class="about__title reveal">
+          <p class="eyebrow">Sobre</p>
+          <h2>Tecnologia e design, <span class="grad-text">lado a lado</span>.</h2>
+        </div>
+        <div class="about__body reveal">
+          <p>
+            Sou estudante de Sistemas de Informação na FACCAT e busco ingressar na área de UX/UI Design, unindo minha base
+            técnica — Python, HTML, CSS e suporte de hardware — à prática de prototipação e design digital.
+          </p>
+          <p>
+            Atualmente atuo na Prefeitura de Nova Hartz, onde desenvolvo wireframes e protótipos no Figma para sistemas e
+            sites institucionais, além de oferecer suporte técnico. Também crio identidades visuais e conteúdo para redes
+            sociais como freelancer.
+          </p>
+          <p>
+            Quero evoluir continuamente na criação de experiências intuitivas e eficientes, com soluções centradas no
+            usuário e impacto real no produto.
+          </p>
+          <div class="about__links">
+            <a href="https://www.linkedin.com/in/kauadapper" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.behance.net/kauadapper" target="_blank" rel="noopener">Behance</a>
+            <a href="https://github.com/kauadapper" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section section--tight" id="projetos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Projetos</p>
+          <h2>Trabalhos selecionados</h2>
+          <p class="section__sub">Da pesquisa e prototipação de interfaces à construção de marcas. Cada projeto completo está no Behance.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar projetos">
+          <button class="chip is-active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="ux">UX/UI</button>
+          <button class="chip" data-filter="brand">Identidade visual</button>
+          <button class="chip" data-filter="graphic">Social &amp; editorial</button>
+        </div>
+
+        <div class="grid" id="projects">
+          <a class="card reveal" data-cat="ux" href="https://www.behance.net/gallery/243378241/AvaliaAi-App-de-Avaliacao-de-Trabalho-Academico" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/avaliaai.png" alt="Capa do projeto AvaliaAí" loading="lazy"></div>
+            <div class="card__body"><span class="tag">App · UX/UI</span><h3>AvaliaAí</h3><p>App de avaliação de trabalho acadêmico</p></div>
+          </a>
+          <a class="card reveal" data-cat="ux" href="https://www.behance.net/gallery/243377253/GreenDrop-App-coleta-de-lixo-eletronico" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/greendrop.png" alt="Capa do projeto GreenDrop" loading="lazy"></div>
+            <div class="card__body"><span class="tag">App · UX/UI</span><h3>GreenDrop</h3><p>App de coleta de lixo eletrônico</p></div>
+          </a>
+          <a class="card reveal" data-cat="ux" href="https://www.behance.net/gallery/243376829/SICTUR-Nova-Hartz-Site-de-Turismo-Municipal" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/sictur.png" alt="Capa do projeto SICTUR Nova Hartz" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Site · UX/UI</span><h3>SICTUR Nova Hartz</h3><p>Site de turismo municipal</p></div>
+          </a>
+          <a class="card reveal" data-cat="ux" href="https://www.behance.net/gallery/243379597/Site-de-Corretoria" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/corretoria.png" alt="Capa do projeto Site de Corretoria" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Site · UX/UI</span><h3>Site de Corretoria</h3><p>Design de site institucional</p></div>
+          </a>
+          <a class="card reveal" data-cat="brand" href="https://www.behance.net/gallery/243222651/Corujita-Contraturno-Escolar-Branding" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/corujita.png" alt="Capa do projeto Corujita" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Branding</span><h3>Corujita</h3><p>Branding de contraturno escolar</p></div>
+          </a>
+          <a class="card reveal" data-cat="brand" href="https://www.behance.net/gallery/243219513/Vitalys-Marca-de-Bebidas-Naturais-(Clericot)" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/vitalys.png" alt="Capa do projeto Vitalys" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Branding</span><h3>Vitalys</h3><p>Marca de bebidas naturais (Clericot)</p></div>
+          </a>
+          <a class="card reveal" data-cat="brand" href="https://www.behance.net/gallery/243219685/Assessor-J-Identidade-Visual-TI" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/assessorj.png" alt="Capa do projeto Assessor J" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Identidade visual</span><h3>Assessor J</h3><p>Identidade visual para T.I.</p></div>
+          </a>
+          <a class="card reveal" data-cat="brand" href="https://www.behance.net/gallery/243218807/Chamas-do-Avivamento-Identidade-Visual-Igreja" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/chamas.png" alt="Capa do projeto Chamas do Avivamento" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Identidade visual</span><h3>Chamas do Avivamento</h3><p>Identidade visual para igreja</p></div>
+          </a>
+          <a class="card reveal" data-cat="brand" href="https://www.behance.net/gallery/243217983/Grupo-RRD-Identidade-Visual-Empreendimento-Imoveis" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/rrd.jpg" alt="Capa do projeto Grupo RRD" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Identidade visual</span><h3>Grupo RRD</h3><p>Identidade visual de empreendimento imobiliário</p></div>
+          </a>
+          <a class="card reveal" data-cat="graphic" href="https://www.behance.net/gallery/243221927/Rafa-Tintas-Social-Media-Design" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/rafatintas.png" alt="Capa do projeto Rafa Tintas" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Social media</span><h3>Rafa Tintas</h3><p>Design para redes sociais</p></div>
+          </a>
+          <a class="card reveal" data-cat="graphic" href="https://www.behance.net/gallery/255670831/Dezemberfest-Festival-Germanico" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/dezemberfest.png" alt="Capa do projeto Dezemberfest" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Design gráfico</span><h3>Dezemberfest</h3><p>Festival germânico</p></div>
+          </a>
+          <a class="card reveal" data-cat="graphic" href="https://www.behance.net/gallery/243379309/E-book-Receitas" target="_blank" rel="noopener">
+            <div class="card__img"><img src="assets/img/projects/ebook.png" alt="Capa do projeto E-book Receitas" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Editorial</span><h3>E-book Receitas</h3><p>Diagramação de e-book</p></div>
+          </a>
+        </div>
+
+        <div class="center reveal">
+          <a href="https://www.behance.net/kauadapper" target="_blank" rel="noopener" class="btn btn--ghost">Ver todos no Behance →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="section" id="experiencia">
+      <div class="container split">
+        <div class="split__title reveal">
+          <p class="eyebrow">Experiência</p>
+          <h2>Onde já <span class="grad-text">atuei</span></h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date">02/2025 — Atual</span>
+            <h3>Suporte Técnico &amp; UX/UI</h3>
+            <p class="timeline__org">Prefeitura de Nova Hartz</p>
+            <p>Desenvolvimento de wireframes e protótipos no Figma para sistemas e sites institucionais. Suporte técnico a usuários e à infraestrutura municipal. Participação na melhoria de interfaces e na organização de fluxos digitais.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date">12/2023 — 07/2024</span>
+            <h3>Assistente de Atendimento Online</h3>
+            <p class="timeline__org">Casa Magalhães (Grupo Boticário)</p>
+            <p>Suporte ao cliente com foco em resolução de problemas técnicos e operacionais. Apoio a sistemas de PDV e equipamentos. Assistência com informações tributárias básicas.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date">Período variável</span>
+            <h3>Design Gráfico &amp; Social Media</h3>
+            <p class="timeline__org">Freelancer</p>
+            <p>Criação de identidade visual e conteúdo digital. Desenvolvimento de artes para redes sociais. Planejamento de comunicação visual para marcas.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section section--tight" id="habilidades">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Habilidades</p>
+          <h2>O que eu uso no dia a dia</h2>
+        </div>
+        <div class="skills">
+          <article class="skill reveal">
+            <h3>UX &amp; pesquisa</h3>
+            <ul><li>Pesquisa com foco no usuário</li><li>Design centrado no usuário</li><li>Fluxos e organização de interfaces</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3>UI &amp; prototipação</h3>
+            <ul><li>Figma</li><li>Wireframes e protótipos</li><li>Sites e sistemas institucionais</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3>Tecnologia</h3>
+            <ul><li>HTML e CSS</li><li>Python</li><li>Assistência de hardware</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3>Criativo</h3>
+            <ul><li>Lightroom</li><li>Affinity</li><li>Canva</li></ul>
+          </article>
+        </div>
+
+        <div class="soft reveal">
+          <div>
+            <h3>Soft skills</h3>
+            <div class="pills"><span>Comunicação eficaz</span><span>Escrita</span><span>Pensamento criativo</span><span>Proatividade</span><span>Ética e organização</span></div>
+          </div>
+          <div>
+            <h3>Idiomas</h3>
+            <div class="pills"><span>Inglês — avançado</span><span>Espanhol — intermediário</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO + GITHUB -->
+    <section class="section" id="formacao">
+      <div class="container two-col">
+        <div class="reveal">
+          <p class="eyebrow">Formação</p>
+          <h2>Estudos</h2>
+          <ul class="list">
+            <li>
+              <h3>Sistemas de Informação</h3>
+              <p>FACCAT · 03/2023 — Atualmente</p>
+            </li>
+            <li>
+              <h3>PUCRS, Awari, FIAP</h3>
+              <p>Cursos focados na história do design e design centrado no usuário.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Código</p>
+          <h2>No GitHub</h2>
+          <ul class="list">
+            <li>
+              <h3><a href="https://github.com/kauadapper/dark-patterns" target="_blank" rel="noopener">dark-patterns ↗</a></h3>
+              <p>Galeria virtual educativa que conscientiza sobre dark patterns — padrões de design que exploram vieses cognitivos para manipular usuários.</p>
+            </li>
+            <li>
+              <h3><a href="https://github.com/kauadapper/Projetos-Academicos" target="_blank" rel="noopener">Projetos-Academicos ↗</a></h3>
+              <p>Coleção de trabalhos e projetos da faculdade.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <div class="container contact__inner">
+        <img class="contact__logo reveal" src="assets/img/logo-principal.svg" alt="Dapper UX/UI Design" width="251" height="108">
+        <h2 class="reveal">Vamos criar algo <span class="grad-text grad-text--light">juntos?</span></h2>
+        <p class="contact__lead reveal">Estou buscando oportunidades em UX/UI Design. Me escreva e vamos conversar.</p>
+        <a class="contact__mail reveal" href="mailto:kauadapperandrade@gmail.com">kauadapperandrade@gmail.com</a>
+        <div class="contact__links reveal">
+          <a href="https://www.linkedin.com/in/kauadapper" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.behance.net/kauadapper" target="_blank" rel="noopener">Behance</a>
+          <a href="https://github.com/kauadapper" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> Kauã Dapper</span>
+      <span>Nova Hartz, RS · Brasil</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
