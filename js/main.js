@@ -51,5 +51,23 @@
     items.forEach((el) => el.classList.add("is-visible"));
   }
 
+  // Qualificações animadas no hero (digita, pausa, apaga, próxima)
+  const typed = document.getElementById("typed");
+  const roles = ["UX/UI Designer", "Figma", "Prototipação de Interfaces", "Bacharelando em Sistemas de Informação"];
+  if (typed && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let role = 0, chars = 0, deleting = false;
+    const tick = () => {
+      const text = roles[role];
+      chars += deleting ? -1 : 1;
+      typed.textContent = text.slice(0, chars);
+      let delay = deleting ? 35 : 70;
+      if (!deleting && chars === text.length) { deleting = true; delay = 1600; }
+      else if (deleting && chars === 0) { deleting = false; role = (role + 1) % roles.length; delay = 350; }
+      setTimeout(tick, delay);
+    };
+    typed.textContent = "";
+    setTimeout(tick, 600);
+  }
+
   document.getElementById("year").textContent = new Date().getFullYear();
 })();
