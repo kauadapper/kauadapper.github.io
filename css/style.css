@@ -346,7 +346,10 @@ h3 { font-size: 1.15rem; letter-spacing: -0.01em; }
   clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
-/* Seleção de texto */
-::selection { background: var(--rose); color: var(--white); }
-::-moz-selection { background: var(--rose); color: var(--white); }
+/* Seleção de texto: cinza claro translúcido (texto branco no fundo escuro) */
+::selection { background: rgba(240, 239, 244, 0.28); color: var(--white); }
+::-moz-selection { background: rgba(240, 239, 244, 0.28); color: var(--white); }
 .grad-text::selection, .skill h3::selection { -webkit-text-fill-color: var(--white); color: var(--white); }
+/* Seção de contato é clara: seleção escura translúcida para manter o contraste */
+.contact ::selection, .footer ::selection { background: rgba(61, 38, 69, 0.22); color: var(--black); }
+.contact .grad-text::selection { -webkit-text-fill-color: var(--black); color: var(--black); }
