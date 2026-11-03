@@ -345,3 +345,8 @@ h3 { font-size: 1.15rem; letter-spacing: -0.01em; }
   position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
+
+/* Seleção de texto */
+::selection { background: var(--rose); color: var(--white); }
+::-moz-selection { background: var(--rose); color: var(--white); }
+.grad-text::selection, .skill h3::selection { -webkit-text-fill-color: var(--white); color: var(--white); }
