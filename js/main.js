@@ -53,7 +53,7 @@
 
   // Qualificações animadas no hero (digita, pausa, apaga, próxima)
   const typed = document.getElementById("typed");
-  const roles = ["UX/UI Designer", "Figma", "Prototipação de Interfaces", "Bacharelando em Sistemas de Informação"];
+  const roles = ["UX/UI Designer", "Web Designer", "Figma", "Prototipação de Interfaces", "Bacharelando em Sistemas de Informação"];
   if (typed && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     let role = 0, chars = 0, deleting = false;
     const tick = () => {
